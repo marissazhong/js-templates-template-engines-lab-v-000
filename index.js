@@ -9,7 +9,7 @@ function createPost() {
   let templateFnComments = _.template(document.getElementById("comments-template").innerHTML);
 
   //page
-  let pageMain = document.getElementByTagName("main")[0];
+  let pageMain = document.getElementsByTagName("main")[0];
   pageMain.innerHTML += templateFnPage;
 
   //blog
