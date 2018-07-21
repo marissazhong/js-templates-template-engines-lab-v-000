@@ -11,37 +11,37 @@
         Post: <input type="text" id="postBody"><br>
         <input type="submit">
       </form>
-    <script src="node_modules/lodash/lodash.min.js"></script>
-    <script src="index.js"></script>
+      <script src="node_modules/lodash/lodash.min.js"></script>
+      <script src="index.js"></script>
 
-    <script id="comments-template" type="text/x-lodash-template">
-      <div class="comments">
-        <form id="newComment" onSubmit="postComment();return false;">
-          Posted By: <input type="text" id="commenterName"><br>
-          Comment: <input type="text" id="commentText"><br>
-          <input type="submit">
-        </form>
-      </div>
-    </script>
+      <script id="comments-template" type="text/x-lodash-template">
+        <div class="comments">
+          <form id="newComment" onSubmit="postComment();return false;">
+            Posted By: <input type="text" id="commenterName"><br>
+            Comment: <input type="text" id="commentText"><br>
+            <input type="submit">
+          </form>
+        </div>
+      </script>
 
-    <script id="page-template" type="text/x-lodash-template">
-      <div id="sidebar"></div>
-      <div id="post"></div>
-    </script>
+      <script id="page-template" type="text/x-lodash-template">
+        <div id="sidebar"></div>
+        <div id="post"></div>
+      </script>
 
-    <script id="post-template" type="text/x-lodash-template">
-      <article>
-        <header><h2><%- postTitle %></h2><header>
-        <p><%- postBody %></p>
-        <footer>Posted by: <%= postAuthor %></footer>
-      </article>
-    </script>
+      <script id="post-template" type="text/x-lodash-template">
+        <article>
+          <header><h2><%- postTitle %></h2><header>
+          <p><%- postBody %></p>
+          <footer>Posted by: <%= postAuthor %></footer>
+        </article>
+      </script>
 
-    <script id="comment-template" type="text/x-lodash-template">
-        <p><%= comment %></p>
-        <footer>Posted By: <%= commenter %></footer>
-    </script>
-  </main>
+      <script id="comment-template" type="text/x-lodash-template">
+          <p><%= comment %></p>
+          <footer>Posted By: <%= commenter %></footer>
+      </script>
+    </main>
 
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
